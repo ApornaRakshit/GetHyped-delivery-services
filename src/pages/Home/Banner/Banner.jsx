@@ -61,53 +61,16 @@ const Banner = () => {
             <img
               src={slide.image}
               alt={`Banner ${index + 1}`}
-              className="
-                w-full
-                h-[260px]
-                sm:h-[360px]
-                md:h-[480px]
-                lg:h-[580px]
-                xl:h-[650px]
-                object-cover
-              "
-            />
+              className="w-full h-[260px] sm:h-[360px] md:h-[480px] lg:h-[580px] xl:h-[650px] object-cover" />
 
             {/* Overlay Content */}
             <div
-              className="
-                absolute
-                inset-0
-                flex
-                items-center
-                justify-start
-                text-left
-              "
-            >
+              className="absolute inset-0 flex items-center justify-start text-left">
               <div
-                className="
-                  pl-4
-                  sm:pl-8
-                  md:pl-12
-                  lg:pl-16
-                  max-w-[95%]
-                  sm:max-w-[70%]
-                  md:max-w-[55%]
-                  lg:max-w-[45%]
-                "
-              >
+                className="pl-4 sm:pl-8 md:pl-12 lg:pl-16 max-w-[95%] sm:max-w-[70%] md:max-w-[55%] lg:max-w-[45%]">
                 {/* Heading */}
                 <h1
-                  className="
-    text-lg
-    sm:text-3xl
-    md:text-4xl
-    lg:text-5xl
-    xl:text-6xl
-    font-bold
-    leading-tight
-    text-[#0B1F2A]
-  "
-                >
+                  className="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-[#0B1F2A]">
                   {index === 0 && (
                     <>
                       <span className="block sm:hidden">
@@ -150,19 +113,8 @@ const Banner = () => {
 
                 {/* Paragraph */}
                 <p
-                  className="
-    mt-2
-    sm:mt-4
-    text-[11px]
-    sm:text-sm
-    md:text-base
-    lg:text-lg
-    text-gray-700
-    leading-relaxed
-    max-w-[300px]
-    sm:max-w-[450px]
-  "
-                >
+                  className="mt-2 sm:mt-4 text-[11px] sm:text-sm md:text-base lg:text-lg text-gray-700 
+                  leading-relaxed max-w-[300px] sm:max-w-[450px]">
                   <span className="block sm:hidden">
                     Enjoy fast, reliable parcel delivery <br />
                     with real-time tracking and zero hassle.
@@ -174,36 +126,12 @@ const Banner = () => {
                 </p>
 
                 {/* Buttons */}
-                <div
-                  className="
-                    mt-4
-                    sm:mt-6
-                    flex
-                    flex-col
-                    items-start
-                    sm:flex-row
-                    gap-2
-                    sm:gap-3
-                  "
-                >
+                <div className="mt-4 sm:mt-6 flex flex-col items-start sm:flex-row gap-2 sm:gap-3">
                   {slide.buttons.map((btn, i) => (
                     <button
                       key={i}
-                      className={`
-                        px-3
-                        sm:px-5
-                        md:px-6
-                        py-1.5
-                        sm:py-2.5
-                        md:py-3
-                        rounded-full
-                        font-semibold
-                        text-[10px]
-                        sm:text-sm
-                        md:text-base
-                        transition-all
-                        duration-300
-                        w-auto
+                      className={`px-3 sm:px-5 md:px-6 py-1.5 sm:py-2.5 md:py-3 rounded-full font-semibold text-[10px]
+                                  sm:text-sm md:text-base transition-all duration-300 w-auto
                         ${btn.style === "primary"
                           ? "bg-lime-400 hover:bg-lime-500 text-black"
                           : "bg-white border border-gray-300 hover:bg-gray-100 text-black"
