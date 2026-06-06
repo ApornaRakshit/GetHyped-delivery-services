@@ -24,14 +24,14 @@ const Brands = () => {
             autoplay={{
                 delay: 1000,
                 disableOnInteraction: false,
-              }}
+            }}
         >
             {
                 brandLogos.map((logo, index) => <SwiperSlide key={index}>
-                    <img src={logo} alt= "" />
+                    <img src={logo} alt="" />
                 </SwiperSlide>)
             }
-            
+
         </Swiper>
     );
 };
